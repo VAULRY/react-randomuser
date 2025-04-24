@@ -21,7 +21,7 @@ useEffect(()=>{
       .sort((u1,u2)=>u1.name.last.localeCompare(u2.name.last))
       .map((u,index)=>
       
-        <li key={index}>{u.name.last} {u.name.first}-{u.phone} <span className="start"></span></li>
+        <li key={index}>{u.name.last} {u.name.first}-{u.phone} <span className="star">&#9734</span></li>
       )}
       </ul>
       
