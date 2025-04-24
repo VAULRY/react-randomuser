@@ -1,6 +1,7 @@
+import { useState } from "react"
 
 function App() {
-  
+  const [users,steUser]=useState("");
 
   return (
     <>
@@ -10,10 +11,11 @@ function App() {
         <li>Prénom</li>
         <li>Téléphone</li>
       </ul>
+      <div>{users}</div>
       <button>Mettre à jour</button>
       <button>Favoris</button>
     </>
   )
-}
 
+}
 export default App
